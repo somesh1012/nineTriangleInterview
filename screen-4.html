@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screen-4</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .mar30{
+        margin: 30px;
+      }
+    </style>
+</head>
+<body>
+
+    <section class=""  style="background-color: #e2e2e2;">
+        <div class="container">
+             <div class="row">
+                  <div class="col-md-12 col-12 py-3">
+                       <img src="image/logo.png" alt="logo" class="img-fluid" width="15%">
+                  </div>
+             </div>
+        </div>
+   </section>   
+        
+       <!-- welcome section -->
+         <div class="container my-4">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="container">
+                        <div class="row">
+                             <div class="col-sm-10">
+                              <div class="media">
+                                  <img class="img-fluid " src="image/t1.jpg" alt="Generic placeholder image" style="height: 60px; border-radius: 30px;">
+                                  <div class="media-body ml-n2">
+                                    <h6 class=" text-primary mt-2">Welcome</h6>
+                                       <p class="text-danger">Ashwin</p>
+                                  </div>
+                                </div>
+                             </div>
+                             <div class="col-sm-2">
+                               <a href="screen-1.html" class="text-danger font-weight-bold nav-link"><i class="fa fa-power-off" aria-hidden="true"></i> <span class="ml-2">logout</span></a>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+              </div>
+         </div>
+
+            <!-- info1 -->
+              <div class="container">
+                  <h4 class="text-danger mt-3 "> <span class="no-bg text-white mx-3">01</span> personal Information</h4>
+                  <div class="pt-3" style="position: relative;">
+                    <div id="tabs-div">
+                      <div class="form-group row">
+                        <div class="col-md-4 col-sm-12 mx-2">
+                          <div class="form-group">
+                              <label class="text-primary" > Document name</label>
+                              <select class="form-control form-control-1">
+                                <option value="1">Pan card</option>
+                                <option value="2">photograph</option>
+                              </select>
+                              <div class="text-light text-right" align="right">pancardscan@01.pdf</div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 mx-2">
+                            <div class="form-group">
+                                <label class="text-primary"> status</label>
+                              <div class="d-flex flex-row">
+                              <input type="text" class="form-control" placeholder="Recieved">
+                              <i class="fa fa-check mt-1 mx-1" aria-hidden="true" style="color: green; font-size: 25px;"></i>
+                              <i class="fa fa-camera  mx-2 mt-1" style="font-size: 25px; color: grey;" aria-hidden="true" ></i>
+                              <i class="fa fa-arrow-circle-o-up  mx-2 mt-1" style="font-size: 25px; color: grey;" aria-hidden="true"></i>
+                              </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12 mx-2">
+                              <div class="form-group">
+                                  <label class= "text-primary"> Remarks</label>
+                                    <input type="text" class="form-control" placeholder="xxx">
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary js-add--exam-row mt-5" style="position: absolute;top:0;right: 3%;">+</button>
+                  </div>
+              </div>
+             <!-- second -->
+             <div class="container">
+                <h4 class="text-danger mt-3"> <span class="no-bg text-white mx-3">02</span> Identity proof</h4>
+                <div class="row pt-2">
+                     <div class="col-md-4 col-sm-12 mx-2">
+                       <div class="form-group">
+                           <label for="exampleFormControlSelect2" class="text-primary" > Document name</label>
+                           <select class="form-control form-control-1" id="exampleFormControlSelect2" onchange="location = this.value;" >
+                             <option value="1">Pan card</option>
+                             <option value="2">photograph</option>
+                           </select>
+                           <small class="text-light text-right">pancardscan@01.pdf</small>
+                         </div>
+                     </div>
+                      
+                     <div class="col-md-3 col-sm-12 mx-2">
+                         <div class="form-group">
+                             <label class="text-primary"> status</label>
+                           <div class="d-flex flex-row">
+                           <input type="text" class="form-control" placeholder="Recieved">
+                           <i class="fa fa-check mt-1 mx-1" aria-hidden="true" style="color: green; font-size: 25px;"></i>
+                           <i class="fa fa-camera  mx-2 mt-1" style="font-size: 25px; color: grey;" aria-hidden="true" ></i>
+                           <i class="fa fa-arrow-circle-o-up  mx-2 mt-1" style="font-size: 25px; color: grey;" aria-hidden="true"></i>
+                           </div>
+                           </div>
+                     </div>
+                    
+                       <div class="col-md-3 col-sm-12 mx-2">
+                             <div class="form-group">
+                                 <label class= "text-primary"> Remarks</label>
+                                  <input type="text" class="form-control" placeholder="xxx">
+                             </div>
+                             
+                       </div>
+                       
+                       <div class="col-md-1 mx-2">
+                           <i class="fa fa-plus mt-4 pt-2" aria-hidden="true" style="color: blue; font-size: 25px;"></i>
+                       </div>
+                </div>
+     </div>
+          <!-- third -->
+          <div class="container">
+            <h4 class="text-danger mt-3"> <span class="no-bg text-white mx-3">03</span> Residence proof</h4>
+            <div class="row pt-2">
+                 <div class="col-md-4 col-sm-12 mx-2">
+                   <div class="form-group">
+                       <label for="exampleFormControlSelect3" class="text-primary" > Document name</label>
+                       <select class="form-control form-control-1" id="exampleFormControlSelect3" onchange="location = this.value;" >
+                         <option value="1">Pan card</option>
+                         <option value="2">photograph</option>
+                       </select>
+                       <small class="text-light text-right">pancardscan@01.pdf</small>
+                     </div>
+                 </div>
+                  
+                 <div class="col-md-3 col-sm-12 mx-2">
+                     <div class="form-group">
+                         <label class="text-primary"> status</label>
+                       <div class="d-flex flex-row">
+                       <input type="text" class="form-control" placeholder="Recieved">
+                       <i class="fa fa-check mt-1 mx-1" aria-hidden="true" style="color: green; font-size: 25px;"></i>
+                       <i class="fa fa-camera  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true" ></i>
+                       <i class="fa fa-arrow-circle-o-up  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true"></i>
+                       </div>
+                       </div>
+                 </div>
+                
+                   <div class="col-md-3 col-sm-12 mx-2">
+                         <div class="form-group">
+                             <label class= "text-primary"> Remarks</label>
+                              <input type="text" class="form-control" placeholder="xxx">
+                         </div>
+                         
+                   </div>
+                   
+                   <div class="col-md-1 mx-2">
+                       <i class="fa fa-plus mt-4 pt-2" aria-hidden="true" style="color: blue; font-size: 25px;"></i>
+                   </div>
+            </div>
+ </div>
+         <!-- fourth -->
+         <div class="container">
+            <h4 class="text-danger mt-3"> <span class="no-bg text-white mx-3">04</span> Income proof</h4>
+            <div class="row pt-2">
+                 <div class="col-md-4 col-sm-12 mx-2">
+                   <div class="form-group">
+                       <label for="exampleFormControlSelect4" class="text-primary" > Document name</label>
+                       <select class="form-control form-control-1" id="exampleFormControlSelect4" onchange="location = this.value;" >
+                         <option value="1">Pan card</option>
+                         <option value="2">photograph</option>
+                       </select>
+                       <small class="text-light text-right">pancardscan@01.pdf</small>
+                     </div>
+                 </div>
+                  
+                 <div class="col-md-3 col-sm-12 mx-2">
+                     <div class="form-group">
+                         <label class="text-primary"> status</label>
+                       <div class="d-flex flex-row">
+                       <input type="text" class="form-control" placeholder="Recieved">
+                       <i class="fa fa-check mt-1 mx-1" aria-hidden="true" style="color: green; font-size: 25px;"></i>
+                       <i class="fa fa-camera  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true" ></i>
+                       <i class="fa fa-arrow-circle-o-up  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true"></i>
+                       </div>
+                       </div>
+                 </div>
+                
+                   <div class="col-md-3 col-sm-12 mx-2">
+                         <div class="form-group">
+                             <label class= "text-primary"> Remarks</label>
+                              <input type="text" class="form-control" placeholder="xxx">
+                         </div>
+                         
+                   </div>
+                   
+                   <div class="col-md-1 mx-2">
+                       <i class="fa fa-plus mt-4 pt-2" aria-hidden="true" style="color: blue; font-size: 25px;"></i>
+                   </div>
+            </div>
+ </div>
+       <!-- fifth -->
+       <div class="container">
+        <h4 class="text-danger mt-3"> <span class="no-bg text-white mx-3">05</span> Employement Documents</h4>
+        <div class="row pt-2">
+             <div class="col-md-4 col-sm-12 mx-2">
+               <div class="form-group">
+                   <label for="exampleFormControlSelect5" class="text-primary" > Document name</label>
+                   <select class="form-control form-control-1" id="exampleFormControlSelect5" onchange="location = this.value;" >
+                     <option value="1">Pan card</option>
+                     <option value="2">photograph</option>
+                   </select>
+                   <small class="text-light text-right">pancardscan@01.pdf</small>
+                 </div>
+             </div>
+              
+             <div class="col-md-3 col-sm-12 mx-2">
+                 <div class="form-group">
+                     <label class="text-primary"> status</label>
+                   <div class="d-flex flex-row">
+                   <input type="text" class="form-control" placeholder="Recieved">
+                   <i class="fa fa-check mt-1 mx-1" aria-hidden="true" style="color: green; font-size: 25px;"></i>
+                   <i class="fa fa-camera  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true" ></i>
+                   <i class="fa fa-arrow-circle-o-up  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true"></i>
+                   </div>
+                   </div>
+             </div>
+            
+               <div class="col-md-3 col-sm-12 mx-2">
+                     <div class="form-group">
+                         <label class= "text-primary"> Remarks</label>
+                          <input type="text" class="form-control" placeholder="xxx">
+                     </div>
+                     
+               </div>
+               
+               <div class="col-md-1 mx-2">
+                   <i class="fa fa-plus mt-4 pt-2" aria-hidden="true" style="color: blue; font-size: 25px;"></i>
+               </div>
+        </div>
+</div>
+      <!-- sixth -->
+      <div class="container">
+        <h4 class="text-danger mt-3"> <span class="no-bg text-white mx-3">06</span>  Income proof</h4>
+        <div class="row pt-2">
+             <div class="col-md-4 col-sm-12 mx-2">
+               <div class="form-group">
+                   <label for="exampleFormControlSelect6" class="text-primary" > Document name</label>
+                   <select class="form-control form-control-1" id="exampleFormControlSelect6" onchange="location = this.value;" >
+                     <option value="1">Pan card</option>
+                     <option value="2">photograph</option>
+                   </select>
+                   <small class="text-light text-right">pancardscan@01.pdf</small>
+                 </div>
+             </div>
+              
+             <div class="col-md-3 col-sm-12 mx-2">
+                 <div class="form-group">
+                     <label class="text-primary"> status</label>
+                   <div class="d-flex flex-row">
+                   <input type="text" class="form-control" placeholder="Recieved">
+                   <i class="fa fa-check mt-1 mx-1" aria-hidden="true" style="color: green; font-size: 25px;"></i>
+                   <i class="fa fa-camera  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true" ></i>
+                   <i class="fa fa-arrow-circle-o-up  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true"></i>
+                   </div>
+                   </div>
+             </div>
+            
+               <div class="col-md-3 col-sm-12 mx-2">
+                     <div class="form-group">
+                         <label class= "text-primary"> Remarks</label>
+                          <input type="text" class="form-control" placeholder="xxx">
+                     </div>
+                     
+               </div>
+               
+               <div class="col-md-1 mx-2">
+                   <i class="fa fa-plus mt-4 pt-2" aria-hidden="true" style="color: blue; font-size: 25px;"></i>
+               </div>
+        </div>
+</div>
+      <!-- seventh -->
+      <div class="container">
+        <h4 class="text-danger mt-3"> <span class="no-bg text-white mx-3">07</span> BD visit report</h4>
+        <div class="row pt-2">
+             <div class="col-md-4 col-sm-12 mx-2">
+               <div class="form-group">
+                   <label for="exampleFormControlSelect7" class="text-primary" > Document name</label>
+                   <select class="form-control form-control-1" id="exampleFormControlSelect7" onchange="location = this.value;" >
+                     <option value="1">Pan card</option>
+                     <option value="2">photograph</option>
+                   </select>
+                   <small class="text-light text-right">pancardscan@01.pdf</small>
+                 </div>
+             </div>
+              
+             <div class="col-md-3 col-sm-12 mx-2">
+                 <div class="form-group">
+                     <label class="text-primary"> status</label>
+                   <div class="d-flex flex-row">
+                   <input type="text" class="form-control" placeholder="Recieved">
+                   <i class="fa fa-check mt-1 mx-1" aria-hidden="true" style="color: green; font-size: 25px;"></i>
+                   <i class="fa fa-camera  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true" ></i>
+                   <i class="fa fa-arrow-circle-o-up  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true"></i>
+                   </div>
+                   </div>
+             </div>
+            
+               <div class="col-md-3 col-sm-12 mx-2">
+                     <div class="form-group">
+                         <label class= "text-primary"> Remarks</label>
+                          <input type="text" class="form-control" placeholder="xxx">
+                     </div>
+                     
+               </div>
+               
+               <div class="col-md-1 mx-2">
+                   <i class="fa fa-plus mt-4 pt-2" aria-hidden="true" style="color: blue; font-size: 25px;"></i>
+               </div>
+        </div>
+</div>
+      <!-- eight -->
+      <div class="container">
+        <h4 class="text-danger mt-3"> <span class="no-bg text-white mx-3">08</span> Others</h4>
+        <div class="row pt-2">
+             <div class="col-md-4 col-sm-12 mx-2">
+               <div class="form-group">
+                   <label for="exampleFormControlSelect8" class="text-primary" > Document name</label>
+                   <select class="form-control form-control-1" id="exampleFormControlSelect8" onchange="location = this.value;" >
+                     <option value="1">Pan card</option>
+                     <option value="2">photograph</option>
+                   </select>
+                   <small class="text-light text-right">pancardscan@01.pdf</small>
+                 </div>
+             </div>
+              
+             <div class="col-md-3 col-sm-12 mx-2">
+                 <div class="form-group">
+                     <label class="text-primary"> status</label>
+                   <div class="d-flex flex-row">
+                   <input type="text" class="form-control" placeholder="Recieved">
+                   <i class="fa fa-check mt-1 mx-1" aria-hidden="true" style="color: green; font-size: 25px;"></i>
+                   <i class="fa fa-camera  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true" ></i>
+                   <i class="fa fa-arrow-circle-o-up  mx-2 mt-1" style="font-size: 25px;  color: grey;" aria-hidden="true"></i>
+                   </div>
+                   </div>
+             </div>
+            
+               <div class="col-md-3 col-sm-12 mx-2">
+                     <div class="form-group">
+                         <label class= "text-primary"> Remarks</label>
+                          <input type="text" class="form-control" placeholder="xxx">
+                     </div>
+                     
+               </div>
+               
+               <div class="col-md-1 mx-2">
+                   <i class="fa fa-plus mt-4 pt-2" aria-hidden="true" style="color: blue; font-size: 25px;"></i>
+               </div>
+        </div>
+</div>
+          <div class="text-center">
+               <a href="screen-5.html" class="btn font-weight-bold py-2 px-3 text-white" style="background-color: rgb(204, 19, 19); font-size: 20px;">Confirm document submission</a>
+          </div>
+
+        
+         <footer class="m-0 p-0" style="background: #eaeaea;">
+          <div class="container mt-5 pt-5">
+                <div class="row">
+                      <div class="col-md-3 col-sm-12">
+                           <ul class="navbar-nav">
+                                 <li class="nav-item"><a class ="nav-link text-dark font-weight-bold " href="">Nine triangles</a></li>
+                                 <li class="nav-item "><a class ="nav-link  " href="" style="font-size: 13px; line-height: 5px; color: grey;"> About us</a></li>
+                                 <li class="nav-item"><a class="nav-link  " href=""  style="font-size: 13px; line-height: 5px; color: grey;">In media</a></li>
+                                 <li class="nav-item"><a class="nav-link text-dark font-weight-bold" href="" >Our Initiatives</a></li>
+                                 <li class="nav-item"><a class="nav-link " href="" style="font-size: 13px; line-height: 3px; color: grey;">Safe banking| Go grown</a></li>
+                           </ul>
+                      </div>
+                      <div class="col-md-3 col-sm-12">
+                           <ul class="navbar-nav">
+                                <li class="nav-item"><a class ="nav-link text-dark font-weight-bold" href="">Our services</a></li>
+                                <li class="nav-item"><a class ="nav-link " href="" style="font-size: 13px; line-height: 5px; color: grey;"> Digital strategy</a></li>
+                                <li class="nav-item"><a class="nav-link " href="" style="font-size: 13px; line-height: 5px; color: grey;">Creative</a></li>
+                                <li class="nav-item"><a class="nav-link " href="" style="font-size: 13px; line-height: 5px; color: grey;"> Technology</a></li>
+                                <li class="nav-item"><a class="nav-link " href="" style="font-size: 13px; line-height: 5px; color: grey;">Marketing</a></li>
+                                <li class="nav-item"><a class="nav-link " href="" style="font-size: 13px; line-height: 5px; color: grey;">Paid campaigns</a></li>
+                                <li class="nav-item"><a class="nav-link  mb-2" href="" style="font-size: 13px;  line-height: 5px; color: grey;">Data analytics</a></li>
+                          </ul>
+                      </div>
+                     
+                      <div class="col-md-2 col-sm-12">
+                           <ul class="navbar-nav">
+                                <li class="nav-item"><a class ="nav-link text-dark font-weight-bold" href="">Portfolio</a></li>
+                                <li class="nav-item"><a class ="nav-link " href="" style="font-size: 13px; line-height: 5px; color: grey;"> work</a></li>
+                                <li class="nav-item"><a class="nav-link " href="" style="font-size: 13px; line-height: 5px; color: grey;">Clients</a></li>
+                               
+                          </ul>
+                      </div>
+
+                      <div class="col-md-2 col-sm-12">
+                           <ul class="navbar-nav">
+                                <li class="nav-item"><a class ="nav-link text-dark font-weight-bold" href="">Carrer</a></li>
+                                <li class="nav-item"><a class ="nav-link " href="" style="font-size: 13px; line-height: 3px; color: grey;"> Join our team</a></li>
+                          </ul>
+                      </div>
+                         
+                      <div class="col-md-2 col-sm-12">
+                           <ul class="navbar-nav">
+                                <li class="nav-item"><a class ="nav-link text-dark font-weight-bold" href="">SItemap</a></li>
+                                <li class="nav-item"><a class ="nav-link " href="" style="font-size: 13px; line-height: 3px; color: grey;">At a glance</a></li>
+                                    
+                                <li class="nav-item"><a class ="nav-link text-dark font-weight-bold" href="">Connect with us</a></li>
+                                   <div class="d-flex flex-row">
+                                     <i class="fa fa-facebook-official mx-2" aria-hidden="true" style="color: red;"></i>
+                                     <i class="fa fa-twitter mx-2" aria-hidden="true"  style="color: red;"></i>
+                                     <i class="fa fa-linkedin-square mx-2" aria-hidden="true"  style="color: red;"></i>
+                                     <i class="fa fa-instagram mx-2" aria-hidden="true"  style="color: red;"></i>
+                                     <i class="fa fa-youtube-play mx-2" aria-hidden="true"  style="color: red;"></i>
+                                  </div>
+                          </ul>
+                      </div>
+
+                </div>
+          </div>
+       </footer>
+     
+         <footer style="background-color: #c2c2c2;">
+              <div class="container">
+                    <div class="row">
+                          <div class="col-12">
+                                <p class="text-center text-dark pt-2">Copyright &copy; All rights reserved</p>
+                          </div>
+                    </div>
+              </div>
+         </footer>
+      
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>   
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+(function() {
+  $(document).on('click', '.js-add--exam-row', function(e) {
+    var clone, examsList;
+    e.preventDefault();
+    examsList = $('#tabs-div');
+    clone = examsList.children('.form-group:first').clone(true);
+    clone.append($('<button>').addClass('btn btn-danger js-remove--exam-row ml-3 mar30').html('x'));
+    clone.find('input').val('').attr('id', function() {
+      return $(this).attr('id') + '_' + (examsList.children('.form-group').length + 1);
+    });
+    return examsList.append(clone);
+  });
+  $(document).on('click', '.js-remove--exam-row', function(e) {
+    e.preventDefault();
+    return $(this).parent().remove();
+  });
+}).call(this);
+</script>
+</body>
+</html>
